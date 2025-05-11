@@ -53,6 +53,6 @@ src/
 
 You can view a basic deployed version of the project here :
 
-**[https://your-username.github.io/your-project-name](https://your-username.github.io/your-project-name)**
+**[https://hsueh-han.github.io/rohsu](https://hsueh-han.github.io/rohsu)**
 
 ---
