@@ -1,0 +1,69 @@
+.rps-button {
+    @apply relative;
+    @apply transition-all;
+    @apply border rounded-md;
+    @apply shadow;
+    @apply outline-0;
+    &.btn-sm {
+        @apply py-1 px-3;
+        @apply text-sm;
+        @apply rounded;
+        &.loading-btn {
+            @apply px-6;
+        }
+    }
+    &.btn-md {
+        @apply py-1.5 px-4;
+        @apply text-base;
+        &.loading-btn {
+            @apply px-7;
+        }
+    }
+    &.btn-lg {
+        @apply py-2 px-5;
+        @apply text-lg;
+        &.loading-btn {
+            @apply px-8;
+        }
+    }
+    &:disabled {
+        @apply opacity-50;
+        @apply cursor-no-drop;
+    }
+    &.btn-default {
+        @apply bg-white/50 hover:bg-rps-secondary-light/30;
+        @apply text-rps-secondary-dark;
+        @apply border-rps-secondary-light hover:border-rps-secondary;
+    }
+    &.btn-primary {
+        @apply bg-rps-primary-dark hover:bg-rps-primary;
+        @apply text-white;
+        @apply border-rps-primary;
+    }
+    &.btn-outline-primary {
+        @apply bg-white hover:bg-rps-primary-light;
+        @apply text-rps-primary-dark hover:text-white;
+        @apply border-rps-primary;
+    }
+    &.btn-secondary {
+        @apply bg-rps-secondary-dark hover:bg-rps-secondary;
+        @apply text-white;
+        @apply border-rps-secondary;
+    }
+    &.btn-danger {
+        @apply bg-rps-danger hover:bg-rps-danger/80;
+        @apply text-white;
+        @apply border-rps-danger;
+    }
+    &.btn-success {
+        @apply bg-rps-success hover:bg-rps-success/80;
+        @apply text-white;
+        @apply border-rps-success;
+    }
+    .loading-icon {
+        @apply absolute top-1/2 right-2 -translate-y-1/2;
+        svg {
+            @apply block animate-spin;
+        }
+    }
+};

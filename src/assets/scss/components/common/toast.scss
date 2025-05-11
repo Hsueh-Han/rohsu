@@ -1,0 +1,20 @@
+.toast-wrap {
+    @apply fixed top-5 right-5 z-50;
+    @apply min-w-[200px] max-w-[50vw];
+
+    .toast-item {
+        @apply px-5 py-3 mb-3 last:mb-0 rounded-md shadow bg-white text-gray-600 text-sm;
+        &.type-success {
+            @apply bg-green-100;
+        }
+        &.type-error {
+            @apply bg-rps-danger;
+        }
+        &.type-warning {
+            @apply bg-orange-100;
+        }
+        &.type-info {
+            @apply bg-gray-500;
+        }
+    }
+}

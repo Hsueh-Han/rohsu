@@ -1,0 +1,10 @@
+.side-menu {
+    @apply py-3;
+    .menu-item {
+        @apply block py-2 px-5 border-b;
+        @apply text-rps-warnning hover:bg-rps-secondary-dark hover:text-white;
+        &.active {
+            @apply bg-rps-secondary-dark text-white;
+        }
+    }
+}

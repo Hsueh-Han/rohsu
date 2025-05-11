@@ -1,0 +1,13 @@
+export const AUTH_TOKEN_KEY = 'rpsToken';
+
+export const UPDATE_TYPE_CREATE = 'CREATE';
+export const UPDATE_TYPE_EDIT = 'EDIT';
+
+export const NEW_COLLECTION = 'NEW_COLLECTION';
+export const RECOMMENDED = 'RECOMMENDED';
+
+export const EXPLORE_SECTION = 'EXPLORE_SECTION';
+export const ABOUT_SECTION = 'ABOUT_SECTION';
+
+export const UPDATE_STATE_LOADING = 'UPDATE_STATE_LOADING';
+export const REMOVE_STATE_LOADING = 'REMOVE_STATE_LOADING';

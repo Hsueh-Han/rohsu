@@ -1,0 +1,55 @@
+.rps-table {
+    @apply relative;
+    table {
+        @apply w-full mb-5;
+        @apply bg-white;
+        tr {
+            th {
+                @apply px-3 py-2;
+                @apply bg-rps-secondary-light;
+                @apply select-none whitespace-nowrap;
+                @apply text-rps-primary-dark;
+                @apply border-b border-rps-secondary-lighter;
+            }
+            td {
+                @apply px-3 py-2;
+                @apply bg-white;
+                @apply border-b border-rps-secondary-lighter;
+            }
+            th, td {
+                &.column-align-left {
+                    @apply text-left;
+                }
+                &.column-align-center {
+                    @apply text-center;
+                }
+                &.column-align-right {
+                    @apply text-right;
+                }
+            }
+            &:hover {
+                td {
+                    @apply bg-slate-50 transition;
+                }
+            }
+            .empty-data {
+                @apply py-5 text-center text-sm text-gray-400;
+            }
+        }
+    }
+    .loading-icon {
+        @apply hidden;
+    }
+    &.table-loading {
+        .loading-icon {
+            @apply block absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2;
+            @apply text-rps-warnning text-xl;
+            svg {
+                @apply block animate-spin;
+            }
+        }
+        table {
+            @apply opacity-40;
+        }
+    }
+}

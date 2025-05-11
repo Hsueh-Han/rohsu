@@ -1,0 +1,170 @@
+.home-wrap {
+    @apply p-3;
+    .nav-bar {
+        @apply flex justify-between items-center;
+        @apply bg-gray-100 mb-3 pl-7 pr-12 py-4 rounded-xl shadow;
+        @apply font-orbitron text-sm text-pink-900;
+        a {
+            @apply hover:text-rps-base-text hover:underline;
+            &.home {
+                @apply text-lg font-bold text-pink-700;
+            }
+        }
+    }
+    .index-banner {
+        @apply relative sm:min-h-[480px] h-[calc(100vh_-_90px)] bg-cover bg-top md:bg-left rounded-xl select-none;
+        .title-block {
+            @apply absolute right-[10px] md:right-[70px] top-[10%];
+            .title {
+                @apply text-right text-xl lg:text-4xl font-audiowide text-gray-100 mb-14 xl:mb-28 2xl:mb-40 w-[300px] lg:w-[500px] ml-auto;
+                .brand {
+                    @apply text-4xl lg:text-7xl text-pink-300;
+                }
+                span::before {
+                    @apply absolute right-[1px];
+                    content: attr(data-text);
+                    text-shadow: 1.5px 0 #69CAD1;
+                    @apply animate-[glitch1_0.8s_linear_alternate-reverse_infinite];
+                }
+                span::after {
+                    @apply absolute -right-[1px];
+                    content: attr(data-text);
+                    text-shadow: -1.5px 0 #EF1751;
+                    @apply animate-[glitch2_1s_linear_alternate-reverse_infinite];
+                }
+            }
+            .collection-block {
+                @apply ml-auto hidden sm:block;
+                .collection-title {
+                    @apply text-white text-right font-orbitron font-bold mb-1.5;
+                }
+                .collection-list {
+                    @apply px-4 py-2 bg-[length:300%_300%] bg-gradient-to-br from-cyan-200 to-pink-300 flex items-center rounded;
+                    @apply animate-[gradientAnimation_5s_ease_infinite];
+                    .collection-item-wrap {
+                        @apply mr-4 h-24 flex space-x-2;
+                        .collection-item {
+                            @apply w-20 rounded overflow-hidden bg-white;
+                            img {
+                                @apply object-cover h-full w-full;
+                            }
+                        }
+                    }
+                    .loading-skeleton {
+                        @apply mr-4 h-24 flex space-x-2 animate-pulse;
+                        .skeleton-item {
+                            @apply bg-slate-200 w-20 flex items-center justify-center rounded;
+                            svg {
+                                @apply w-8 h-8 text-gray-300 dark:text-gray-600;
+                            }
+                        }
+                    }
+                    .collection-text {
+                        @apply text-xs text-white;
+                    }
+                }
+            }
+        }
+    }
+    .explore-btn {
+        @apply py-1 px-5 border border-pink-400 bg-pink-400 hover:bg-pink-500 font-bold text-center text-white;
+        @apply rounded-xl text-sm mr-5 whitespace-nowrap;
+    }
+    .about-btn {
+        @apply py-1 px-5 border border-gray-200 hover:bg-white/20 font-bold text-center text-gray-200;
+        @apply rounded-xl text-sm whitespace-nowrap;
+    }
+    .intro-block {
+        @apply py-16 px-2 md:px-10 text-white text-center;
+        .title {
+            @apply font-orbitron mb-8 text-xl font-bold;
+        }
+    }
+    .store-info-block {
+        @apply px-2 mb-20 md:px-10 md:grid grid-cols-4 gap-10 select-none;
+        .second-banner {
+            @apply h-[200px] md:h-full font-orbitron bg-cover bg-top rounded-xl col-span-3 mb-5 md:mb-0 overflow-hidden;
+            .clip-wrap {
+                @apply h-full bg-white/40;
+                .clip-title {
+                    @apply h-[200px] md:h-full p-10 bg-cover bg-top text-4xl md:text-6xl xl:text-7xl font-bold bg-clip-text text-transparent;
+                }
+            }
+        }
+        .info-list {
+            @apply grid grid-cols-3 gap-4 md:block cursor-default;
+            .info-item {
+                @apply bg-gray-50 mb-0 md:mb-3 md:last:mb-0 rounded-lg p-3 text-rps-primary text-2xl text-center;
+            }
+        }
+    }
+    .divider {
+        @apply border-b w-4/5 mx-auto;
+    }
+}
+.footer {
+    @apply p-10 pb-5 bg-gradient-to-br from-pink-950 to-violet-950 text-white;
+    .footer-list {
+        @apply grid grid-cols-2 md:grid-cols-4 gap-4 mb-16;
+        a {
+            @apply hover:underline block mb-1;
+            &.media-btn {
+                @apply text-2xl mb-0 mr-2 last:mr-0 hover:text-gray-200;
+            }
+        }
+    }
+}
+
+@keyframes glitch1 {
+    0% {
+        clip-path: inset(5% 0 15% 0);
+    }
+    20% {
+        clip-path: inset(61% 0 9% 0);
+    }
+    40% {
+        clip-path: inset(5% 0 81% 0);
+    }
+    60% {
+        clip-path: inset(21% 0 52% 0);
+    }
+    80% {
+        clip-path: inset(11% 0 70% 0);
+    }
+    100% {
+        clip-path: inset(68% 0 6% 0);
+    }
+}
+
+@keyframes glitch2 {
+    0% {
+        clip-path: inset(82% 0 9% 0);
+    }
+    20% {
+        clip-path: inset(31% 0 44% 0);
+    }
+    40% {
+        clip-path: inset(49% 0 11% 0);
+    }
+    60% {
+        clip-path: inset(6% 0 85% 0);
+    }
+    80% {
+        clip-path: inset(40% 0 37% 0);
+    }
+    100% {
+        clip-path: inset(90% 0 3% 0);
+    }
+}
+
+@keyframes gradientAnimation {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
