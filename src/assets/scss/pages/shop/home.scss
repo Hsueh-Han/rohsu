@@ -107,7 +107,7 @@
     .footer-list {
         @apply grid grid-cols-2 md:grid-cols-4 gap-4 mb-16;
         a {
-            @apply hover:underline block mb-1;
+            @apply hover:underline mb-1;
             &.media-btn {
                 @apply text-2xl mb-0 mr-2 last:mr-0 hover:text-gray-200;
             }

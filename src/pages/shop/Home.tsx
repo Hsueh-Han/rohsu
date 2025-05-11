@@ -287,66 +287,58 @@ function Home () {
             <div className="footer-list">
                 <div>
                     <p className="font-bold text-xl mb-5">Products</p>
-                    <div className="pl-2">
-                        <NavLink
-                            className="explore-btn"
-                            to="/"
-                        >
-                            Clothing
-                        </NavLink>
-                        <NavLink
-                            className="explore-btn"
-                            to="/"
-                        >
-                            Accessories
-                        </NavLink>
-                    </div>
+                    <ul className="pl-2">
+                        <li>
+                            <NavLink to="/">
+                                Clothing
+                            </NavLink>
+                        </li>
+                        <li>
+                            <NavLink to="/">
+                                Accessories
+                            </NavLink>
+                        </li>
+                    </ul>
                 </div>
                 <div>
                     <p className="font-bold text-xl mb-5">Category</p>
-                    <div className="pl-2">
-                        <NavLink
-                            className="explore-btn"
-                            to="/"
-                        >
-                            Men
-                        </NavLink>
-                        <NavLink
-                            className="explore-btn"
-                            to="/"
-                        >
-                            Women
-                        </NavLink>
-                        <NavLink
-                            className="explore-btn"
-                            to="/"
-                        >
-                            Kids
-                        </NavLink>
-                    </div>
+                    <ul className="pl-2">
+                        <li>
+                            <NavLink to="/">
+                                Men
+                            </NavLink>
+                        </li>
+                        <li>
+                            <NavLink to="/">
+                                Women
+                            </NavLink>
+                        </li>
+                        <li>
+                            <NavLink to="/">
+                                Kids
+                            </NavLink>
+                        </li>
+                    </ul>
                 </div>
                 <div>
                     <p className="font-bold text-xl mb-5">Company Info</p>
-                    <div className="pl-2">
-                        <NavLink
-                            className="explore-btn"
-                            to="/"
-                        >
-                            About Us
-                        </NavLink>
-                        <NavLink
-                            className="explore-btn"
-                            to="/"
-                        >
-                            Contact Us
-                        </NavLink>
-                        <NavLink
-                            className="explore-btn"
-                            to="/"
-                        >
-                            Support
-                        </NavLink>
-                    </div>
+                    <ul className="pl-2">
+                        <li>
+                            <NavLink to="/">
+                                About Us
+                            </NavLink>
+                        </li>
+                        <li>
+                            <NavLink to="/">
+                                Contact Us
+                            </NavLink>
+                        </li>
+                        <li>
+                            <NavLink to="/">
+                                Support
+                            </NavLink>
+                        </li>
+                    </ul>
                 </div>
                 <div>
                     <p className="font-bold text-xl mb-5">Follow Us</p>
